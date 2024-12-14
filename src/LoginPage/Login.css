@@ -1,0 +1,136 @@
+/* Login.css */
+
+.chatbot-page {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  .chatbot-container {
+    width: 350px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .chatbot-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .chatbot-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .chatbot-input {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .chatbot-input ::placeholder{
+    color: #d46565;
+  }
+  .password-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .password-show-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  .password-show-btn:hover {
+    color: #0056b3;
+  }
+  
+  .chatbot-send-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chatbot-send-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .bottom-link {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .bottom-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .bottom-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .admin-link {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .admin-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .admin-link a:hover {
+    text-decoration: underline;
+  }
+
+  .user-link {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .user-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .user-link a:hover {
+    text-decoration: underline;
+  }
+  

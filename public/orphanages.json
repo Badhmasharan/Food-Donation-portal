@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "name": "Sunshine Orphanage",
+      "city":"Coimbatore",
+      "description": "Providing a safe home for children in need.",
+      "numberOfPersons": 50,
+
+      "address": "123 Sunshine St, Springfield"
+    },
+    {
+      "id": 2,
+      "name": "Hope Children Home",
+      "city":"Coimbatore",
+      "description": "A warm and caring environment for kids.",
+      "numberOfPersons": 30,
+      "address": "456 Hope Ave, Metro City"
+    },
+    {
+      "id": 3,
+      "name": "Rainbow Orphanage",
+      "city":"Erode",
+      "description": "A place for kids to grow with love.",
+      "numberOfPersons": 25,
+      "address": "789 Rainbow Rd, Dreamtown"
+    }
+  ]
+  

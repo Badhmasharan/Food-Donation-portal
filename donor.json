@@ -1,0 +1,18 @@
+{
+  "donations": [
+    
+    {
+      "id": "24488be5-c1b6-4fc7-838b-eab641f38a7d",
+      "foodName": "asd",
+      "donorName": "asdf",
+      "donorEmail": "asdf@gmail.com",
+      "donorPhone": "1234567123",
+      "quantity": "234",
+      "pickupLocation": "Sri Krishna College of Engineering, SIDCO-Sugunapuram Rd, Ward 92, Madukkarai - 641105, Tamil Nadu, India",
+      "dateOfDonation": "2024-11-08",
+      "timeOfDonation": "09:48:55",
+      "userId": "7671",
+      "userName": "gowtham"
+    }
+  ]
+}

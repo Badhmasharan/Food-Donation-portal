@@ -1,0 +1,122 @@
+/* General footer styling */
+.custom-main-footer {
+    background-color: #f8f9fa; /* Light grey background for the footer */
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+footer {
+    color: #333; /* Default text color */
+}
+
+/* Footer header styling */
+footer h5 {
+    color: #0066cc; /* Blue color for headers */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Styling for the navigation links */
+.nav-link {
+    color: #007bff !important; /* Blue color for navigation links */
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: #0056b3 !important; /* Darker blue on hover */
+}
+
+/* Styling for columns in footer */
+.footer .col-2, .footer .col-4, .footer .col-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer .col-5 {
+    justify-content: space-between;
+}
+
+.footer .col-5 .form-control {
+    margin-bottom: 15px; /* Add margin for spacing between email input and button */
+}
+
+/* Subscribe form styling */
+form h5 {
+    color: #0066cc; /* Blue color for subscribe section header */
+}
+
+form p {
+    color: #555; /* Slightly dark text color for description */
+}
+
+.form-control {
+    border: 1px solid #0066cc; /* Blue border for email input */
+    border-radius: 25px;
+    padding: 12px;
+    font-size: 14px;
+    background-color: white;
+}
+
+.form-control:focus {
+    border-color: #0056b3; /* Darker blue when focused */
+}
+
+button.SubscribeBtn {
+    background-color: #0066cc; /* Blue background for subscribe button */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button.SubscribeBtn:hover {
+    background-color: #0056b3; /* Darker blue when hovered */
+}
+
+/* Invalid email feedback */
+.invalid-feedback {
+    color: #dc3545; /* Red for error message */
+}
+
+/* Footer bottom section */
+footer .border-top- {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+footer .icon a {
+    color: #007bff; /* Blue color for social media icons */
+    transition: color 0.3s ease;
+}
+
+footer .icon a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer text and copyright */
+footer p {
+    color: #666; /* Light grey color for the copyright text */
+}
+
+/* Adjustments for different screen sizes */
+@media (max-width: 767px) {
+    .footer .col-2,
+    .footer .col-4,
+    .footer .col-5 {
+        text-align: center;
+        margin-bottom: 20px;
+        flex-basis: 100%;
+    }
+
+    .footer .col-5 .form-control {
+        margin-bottom: 10px; /* Adjust margin for better alignment */
+    }
+
+    .footer .col-5 button.SubscribeBtn {
+        width: 100%; /* Make the button take full width on small screens */
+    }
+}

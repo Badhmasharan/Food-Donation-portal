@@ -1,0 +1,107 @@
+.payment-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .payment-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-preview {
+    background-color: #eaeaea;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-details p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #333;
+  }
+  
+  .payment-form {
+    margin-top: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+ .form-group input[type="text"],
+  .form-group input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="password"]:focus {
+    outline: none;
+    border-color: #ff6f00;
+  }
+  
+  .form-group label {
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .horizontal-form {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .horizontal-form div {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .horizontal-form div:last-child {
+    margin-right: 0;
+  }
+  
+  .pay-now-btn {
+    background-color: #2b8a3e;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .pay-now-btn:hover {
+    background-color: #237530;
+  }
+  
+  .payment-status {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: green;
+    text-align: center;
+  }

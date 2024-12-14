@@ -1,0 +1,488 @@
+/* Donationpage.css */
+
+.donation-page {
+  /* padding-top: 8%; */
+  padding: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f8fa;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* .donation-section{
+  margin-top: -10%;
+} */
+
+.donation-container {
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.donation-type-switch {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.switch-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid #36a;
+  border-radius: 5px;
+  margin: 0 5px;
+  background-color: #fff;
+  color: #36a;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.switch-btn.active {
+  background-color: #36a;
+  color: #fff;
+}
+
+.switch-btn:hover {
+  background-color: #36a;
+  color: #fff;
+}
+
+.donation-section, .donation-form {
+ 
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.donation-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.donation-image {
+  width: 200px;
+  border-radius: 8px;
+}
+
+.donation-details-page {
+  flex: 1;
+}
+
+.donation-amount {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.donation-amount span {
+  color: #36a;
+  margin-right: 5px;
+}
+
+.amount-input {
+  width: 70px;
+  padding: 5px;
+  margin-left: 5px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.amount-slider {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.monthly-donation label {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.donate-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgb(5, 122, 255);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.donate-btn:hover {
+  background-color: #27496d;
+}
+
+.horizontal-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+  border-color: #36a;
+  outline: none;
+}
+
+.locationbtn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #36a;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.get-location-btn:hover {
+  background-color: #27496d;
+}
+
+.donation-status {
+  font-size: 1rem;
+  color: green;
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .horizontal-form {
+    flex-direction: column;
+  }
+
+  .donation-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donation-image {
+    width: 70%;
+  }
+}
+
+
+/* General Page Styling */
+.orphanage-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #f0f4f8, #dce1e8); /* Gradient background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+}
+
+.orphanage-list h2 {
+  font-size: 3rem;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+
+.orphanage-list h2:hover {
+  color: #007bff;
+  letter-spacing: 4px;
+}
+
+/* Card Container Styling with Equal Space Distribution */
+.orphanage-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px; /* Space between cards */
+  width: 100%;
+  max-width: 1200px; /* Set max-width to avoid cards stretching too much on large screens */
+  margin-top: 20px;
+  justify-items: center; /* Ensures that cards are centered within each grid item */
+}
+
+/* Individual Card Styling */
+.orphanage-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  width: 100%; /* Ensure the card takes full width within the grid cell */
+  max-width: 350px; /* Limit the width of each card */
+}
+
+.orphanage-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Content Styling */
+.orphanage-card h3 {
+  font-size: 1.8rem;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+.orphanage-card p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.orphanage-card .info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.orphanage-card .info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.orphanage-card .info span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Hover Effect for Button */
+.orphanage-card button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.orphanage-card button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.orphanage-card button:active {
+  transform: scale(1);
+}
+
+/* Loading Animation */
+.orphanage-list .loading {
+  font-size: 1.5rem;
+  color: #007bff;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .orphanage-list {
+    padding: 30px;
+  }
+
+  .orphanage-list h2 {
+    font-size: 2.5rem;
+  }
+
+  .orphanage-card {
+    padding: 18px;
+  }
+
+  .orphanage-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .orphanage-card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .orphanage-list h2 {
+    font-size: 2rem;
+  }
+
+  .orphanage-card {
+    padding: 15px;
+  }
+
+  .orphanage-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .orphanage-card p {
+    font-size: 0.95rem;
+  }
+
+  .orphanage-card button {
+    padding: 10px 14px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .orphanage-list {
+    padding: 20px;
+  }
+
+  .orphanage-list h2 {
+    font-size: 1.8rem;
+  }
+
+  .orphanage-card {
+    padding: 12px;
+  }
+
+  .orphanage-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .orphanage-card p {
+    font-size: 0.9rem;
+  }
+
+  .orphanage-card button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Location Button Styling */
+.actions {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.actions button {
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.actions button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.actions button:active {
+  background-color: #004494;
+  transform: translateY(1px);
+}
+
+/* Current City Display Styling */
+.user-city {
+  margin-left: 15px;
+  font-size: 1rem;
+  color: #333;
+  padding: 5px 15px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  font-weight: 600;
+}
+
+.user-city::before {
+  content: "📍 ";
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+
+.city-filter {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-left: 15px;
+  border: 1px solid #ccc;
+}
+
+.user-city {
+  font-weight: bold;
+  color: #333;
+}

@@ -1,0 +1,415 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+.advanced-home-container {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+  
+
+  .hero-section {
+    background: url('C:\Users\shara\Videos\MINI PROJECT\FRONTEND\frontend\public\wallp.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    align-items: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  
+
+.hero-title {
+  display: inline-block;
+  color: white;
+  font-family: 'Righteous', serif;
+  font-size: 5em; 
+  text-shadow: .03em .03em 0#007bff;
+}
+
+.hero-title:after {
+  content: attr(data-shadow);
+  position: absolute;
+  top: .06em; left: .06em;
+  z-index: -1;
+  text-shadow: none;
+  background-image:
+    linear-gradient(
+      45deg,
+      transparent 45%,
+      hsla(48,20%,90%,1) 45%,
+      hsla(48,20%,90%,1) 55%,
+      transparent 0
+    );
+  background-size: .05em .05em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shad-anim 15s linear infinite;
+}
+
+@keyframes shad-anim {
+  0% {background-position: 0 0}
+  100% {background-position: 100% -100%}
+}
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.667);
+    font-weight: bolder;
+
+    margin-bottom: 40px;
+  }
+  
+  .hero-button {
+    background-color:#5500ff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #3c00ff;
+  }
+  
+
+
+/* Donate Section */
+.donate-form-section {
+  background-color: #eeeeee6b; /* Yellow background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Full height */
+  padding: 20px;
+}
+
+.donate-form-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  gap: 20%;
+  max-width: 1200px;
+}
+.donate-image{
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+}
+.donate-image img {
+  max-width: 250px; /* Set the size of the image */
+  height: auto;
+
+}
+
+.donate-text {
+  max-width: 400px;
+  text-align: right;
+  cursor: default;
+ 
+}
+.donate-text :hover{
+  color: #5500ff;
+
+}
+
+.donate-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+  font-family: 'Poppins', sans-serif; /* As per your project */
+}
+
+.donate-description {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.learn-more-button {
+  background-color: transparent;
+  border: 2px solid #333;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #333;
+}
+
+.learn-more-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+  .donate-form input,
+  .donate-form textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .donate-form textarea {
+    resize: vertical;
+  }
+  
+  .form-button {
+    padding: 15px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .donate-form-button {
+    padding: 15px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    width: 160px;
+
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  
+
+  .donate-now-section {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #007bff, #6fb1fc);
+    color: white; /* White text for contrast */
+    text-align: center; /* Center align text */
+   
+   
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .donate-now-section h2 {
+    font-size: 2.5rem; /* Larger font size */
+    margin-bottom: 10px; /* Spacing below the heading */
+  }
+  
+  .donate-now-section p {
+    font-size: 1.2rem; /* Slightly larger font for readability */
+    margin-bottom: 20px; /* Spacing below the paragraph */
+  }
+  
+  .donate-now-button {
+    padding: 15px 30px; /* Padding for button */
+    font-size: 1.2rem; /* Font size for button */
+    background-color: #fff; /* Button background color */
+    color: #007bff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* Pointer cursor for hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  }
+  
+  .donate-now-button:hover {
+    background-color: #007bff; /* Button background on hover */
+    color: #fff; /* Button text color on hover */
+  }
+  
+
+
+
+
+
+  .testimonials-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1c36f9ae, #f1690f6b); /* Gradient background */
+    text-align: center;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 30px;
+   
+    color: #333; /* Darker text for better contrast */
+   
+
+  }
+  
+  .testimonial-slider {
+    width: 80%; /* Wider slider */
+    max-width: 1200px; /* Limit max width */
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Center the slider */
+    border-radius: 20px; /* Reduced border radius for modern look */
+    overflow: hidden; /* Hide overflow for smoothness */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow around the slider */
+  }
+  
+  .testimonial-card {
+    padding: 30px; /* More padding for better content spacing */
+    font-style: italic;
+    width: 100%;
+    background-color: #fff; /* White background for each testimonial */
+    border-radius: 15px; /* Slightly reduced border radius */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform on hover */
+    position: relative; /* Position relative for inner shadow */
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  .slick-dots {
+    bottom: -20px; /* Adjust position of dots */
+  }
+  
+  .slick-dots li button:before {
+    font-size: 14px; /* Size of the dots */
+    color: #fffbfb; /* Color of inactive dots */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #007bff; /* Active dot color */
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    color: #007bff; /* Arrow color */
+    font-size: 20px; /* Arrow size */
+  }
+  
+  
+  .steps-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f1f1f1; /* Light background for contrast */
+}
+
+.steps-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333; /* Dark text color for better visibility */
+    font-weight: bold;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background-color: #fff; /* White background for the step cards */
+    padding: 30px; /* Increased padding for a spacious look */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 300px; /* Fixed width for uniformity */
+    min-width: 250px; /* Minimum width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    position: relative; /* For pseudo-elements */
+    overflow: hidden; /* To clip the pseudo-elements */
+}
+
+.step::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 150, 136, 0.1); /* Light teal background for the effect */
+    border-radius: 12px;
+    z-index: 0; /* Behind the content */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color:#007bff; /* Teal color for the headings */
+    position: relative; /* For proper stacking */
+    z-index: 1; /* Bring text above the pseudo-element */
+}
+
+.step p {
+    color: #555; /* Slightly lighter text color for the description */
+    position: relative;
+    z-index: 1; /* Bring text above the pseudo-element */
+}
+
+.step:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.step:hover::before {
+    transform: scale(1.1); /* Scale the background on hover */
+}
+
+ 
+  .cta-section {
+    background: linear-gradient(180deg, #f1f1f1,#007bff38); /* Gradient background */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .cta-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    color: #333;
+    padding: 40px;
+    border-radius: 8px;
+  }
+  
+  .donation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .donation-form input,
+  .donation-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-button {
+    padding: 15px;
+    background-color:#007bff;
+    color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+ 
+  .foooter {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    
+  }
+  
+  .contact-text{
+    width: 96%;
+  }

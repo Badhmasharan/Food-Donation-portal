@@ -1,0 +1,119 @@
+/* General reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7; /* Light gray background */
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70px; /* Shrunk width */
+    height: 100vh;
+    background-color: #004d80; /* Dark blue */
+    padding: 20px 30px; /* Padding when shrunk */
+    color: #fff; /* White text */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease, padding 0.2s ease; /* Smooth transition for width and padding */
+    align-items: center; /* Center items */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Sidebar expands on hover */
+.sidebar:hover {
+    width: 250px; /* Expanded width */
+    padding: 20px; /* Add padding when expanded */
+}
+
+/* Sidebar links */
+.sidebar .nav-item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Sidebar links with text and icons */
+.sidebar .nav-link {
+    color: #e0f7fa; /* Light cyan text */
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease, padding-left 0.3s ease;
+    width: 100%;
+}
+
+/* Hover effects on sidebar links */
+.sidebar .nav-link:hover {
+    color: #ffffff; /* White text on hover */
+    background-color: #0077b3; /* Slightly lighter blue for hover */
+    padding-left: 30px; /* Indentation effect on hover */
+}
+
+.sidebar .nav-link i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: transform 0.3s ease; /* Smooth transition for icon */
+}
+
+/* Rotate icon on hover */
+.sidebar .nav-link:hover i {
+    transform: rotate(360deg); /* Rotate icon */
+}
+
+/* Hide text when sidebar is shrunk */
+.sidebar .nav-link span {
+    display: inline-block;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar {
+    width: 70px; /* Shrunk width */
+}
+
+.sidebar .nav-link span {
+    opacity: 0; /* Hide text initially */
+}
+
+.sidebar:hover .nav-link span {
+    opacity: 1; /* Show text when sidebar is expanded */
+}
+
+/* Media Query for mobile responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: 1000;
+        transform: translateX(-100%);
+        padding: 10px;
+    }
+
+    .sidebar.d-block {
+        transform: translateX(0);
+    }
+
+    .sidebar .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .sidebar .nav-link {
+        font-size: 1rem;
+    }
+
+    /* Center items on smaller screens */
+    .sidebar {
+        align-items: center;
+    }
+
+    .sidebar .nav-link {
+        justify-content: center;
+    }
+}
